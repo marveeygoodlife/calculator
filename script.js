@@ -26,6 +26,14 @@ return;
 const displayDate = document.getElementById('date');
 if (displayDate) {
     const newDate = new Date();
+    displayDate.style.textAlign = "center";
+    displayDate.style.margin = "10px";
+    displayDate.style.color = "white";
+    displayDate.style.backgroundColor = "#183D3D";
+    displayDate.style.padding = "20px";
+
+
+
 
     displayDate.innerHTML = newDate.toDateString();
 }
