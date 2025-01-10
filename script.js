@@ -34,9 +34,13 @@ if (displayDate) {
 
 
 
-
-    displayDate.innerHTML = newDate.toDateString();
 }
 
 
-
+// function to update time in my code
+function updateTime(){
+    let currentDate = new Date();
+    document.getElementById('date').innerHTML =`${currentDate}` ;
+}
+setInterval(updateTime, 1000);
+ 

@@ -11,24 +11,40 @@ html {
 body {
     display: grid;
     place-content: center;
-    max-width: 1000px;
+    grid-template-areas: "header"
+    "main"
+    "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px auto 100px;
+    width: 100%;
     font-family: 'Roboto', sans-serif;
     font-size: 4vw;
-    padding: 3px;
-    background: radial-gradient(circle, #5C8374, #93B1A6, #93B1A6, #183D3D);
+    background-repeat: none;
+    background-size: cover;
+     background: radial-gradient(circle, black, #5C8374, #93B1A6, #93B1A6, #183D3D);
 }
-header {
+header { grid-area: header;
+   grid-column: 1 / 2;
+   grid-row: 1 / 2;
    text-align: center;
+   top: 0;
+    width: 100%;
+   height: auto;
+   padding: 20px;
 }
 form {
     background: linear-gradient(to right, #93B1A6, #183D3D);
     display: grid;
     place-content: center;
-    padding: 15px;
-    border: 2px solid black;
+    padding: .3em;
+    border: 1px solid #183D3D;
     background-color: #f0f0f0;
+ }
+hr {
+   background-color: #183D3D;
+    margin: .2em;
+    width: 100%;
 }
-
 input[type=number] {
     width: 100%;
     padding: 11px;
@@ -93,28 +109,51 @@ input[type=number] {
     display: table;
     clear: both;
  }
+main {
+   grid-area: main;
+   grid-column: auto;
+   grid-row: 2 / 3;
+   padding:  .9em;
+   margin: 0 auto;
+}
+ footer { grid-area: footer;
+   grid-column:auto;
+   grid-row: 3/4;
+   height: auto;
+   width: 100vw;
+   bottom: 0;
+ }
 
  @media (min-width:600px) and (max-width:1024px) {
 
-    body {    font-size: 2vw;
+    body {    font-size: 1vw;
     }
 
     .leftCol {
          width:42%;
       }
-    
+      label{
+         font-size: 1vw;
+        }
      .rightCol {
          width: 58%;}
+         .para {
+            font-size: 1vw;
+         }
  }
  @media screen and (min-width:1025px){
- body {    font-size: 1.5vw;
-    width: 100%;
-    
+ body {    font-size: 1.5vw;    
 }
-    .cleftCol {
-        width:46%;
+    .leftCol {
+        width:45%;
      }
-   
+   .para {
+      font-size: 1vw;
+   }
     .rightCol {
-        width: 53%;}
+        width: 55%;}
+
+        label{
+         font-size: 1vw;
+        }
  }
