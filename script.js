@@ -13,7 +13,7 @@ function calculate() {
 
 //validation to check if inputs are numbers 
 if (isNaNInput ) {
-displayLabel.textContent = "Please enter a valid number";
+displayLabel.textContent = "Please enter a  number";
 return;
 } 
     //calculate total  hours and fee
@@ -31,16 +31,15 @@ if (displayDate) {
     displayDate.style.color = "white";
     displayDate.style.backgroundColor = "#183D3D";
     displayDate.style.padding = "20px";
-
-
-
 }
 
-
-// function to update time in my code
+// function to automatically update time in my code
 function updateTime(){
     let currentDate = new Date();
-    document.getElementById('date').innerHTML =`${currentDate}` ;
+    document.getElementById('date').innerHTML =`${currentDate}`;
+
+
 }
+
 setInterval(updateTime, 1000);
  

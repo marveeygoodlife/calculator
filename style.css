@@ -9,15 +9,14 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    display: grid;
-    place-content: center;
-    grid-template-areas: "header"
+    /* display:  flex;
+    flex-direction: column;
+     grid-template-areas: "header"
     "main"
     "footer";
     grid-template-columns: 1fr;
-    grid-template-rows: 70px auto 100px;
-    width: 100%;
-    font-family: 'Roboto', sans-serif;
+    grid-template-rows: 70px auto 100px; */
+     font-family: 'Roboto', sans-serif;
     font-size: 4vw;
     background-repeat: none;
     background-size: cover;
@@ -36,8 +35,10 @@ form {
     background: linear-gradient(to right, #93B1A6, #183D3D);
     display: grid;
     place-content: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
     padding: .3em;
-    border: 1px solid #183D3D;
+     border: 1px solid #183D3D;
     background-color: #f0f0f0;
  }
 hr {
@@ -115,12 +116,14 @@ main {
    grid-row: 2 / 3;
    padding:  .9em;
    margin: 0 auto;
+   max-width:800px;
 }
  footer { grid-area: footer;
    grid-column:auto;
    grid-row: 3/4;
    height: auto;
    width: 100vw;
+   text-align: center;
    bottom: 0;
  }
 
@@ -148,12 +151,12 @@ main {
         width:45%;
      }
    .para {
-      font-size: 1vw;
+      font-size: 1.4vw;
    }
     .rightCol {
         width: 55%;}
 
         label{
-         font-size: 1vw;
+         font-size: 1.1vw;
         }
  }
