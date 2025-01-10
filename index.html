@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Fee Calculator</h1>
+    </header>
+<main>
+    <section class="hero">
+        <p class="para">Calculate your fee per session for your online class</p>
+    </section>
+    <section class="calculator">
+        <section class="card">
+             <div class="form">
+                <form action="" method="post">
+
+                    <div class="hero">
+                      <!-- Display label -->
+                    <label for=""  id="displayLabel"  class="display"></label>
+<!-- Form elements -->
+                    </div>
+                    <div class="row">
+                        <div class="leftCol">
+                          <label for="hourlyRate">  Hourly Rate:</label>
+                        </div>
+                        <div class="rightCol">
+                          <input type="number"   id="hourlyRate" name="hourlyRate" required autofocus  placeholder=" # per hour..">
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="leftCol">
+                          <label for="sessionTime">Session Time:</label>
+                        </div>
+                        <div class="rightCol">
+                          <input type="number" id="sessionTime" name="sessionTime" required placeholder=" Hour per sessions.." title="How many hour per session?">
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="leftCol">
+                          <label for="sessionPerWeek">Session Per Week:</label>
+                        </div>
+                        <div class="rightCol">
+                          <input type="number" id="sessionPerWeek" name="sessionPerWeek" required placeholder=" Section per week.." title="Sessions per week">
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="leftCol">
+                          <label for="sessionDuration">Session Duration:</label>
+                        </div>
+                        <div class="rightCol">
+                          <input type="number" id="sessionDuration" name="sessionDuration" 
+                          placeholder=" duration in weeks.." required>
+                        </div>
+                      </div>
+                    <button id="button" type="button" onclick="calculate">Calculate</button>
+                </form>
+            </div>
+        </section>
+    </section>
+</main>
+<footer>
+  <p id="date"></p>
+</footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    display: grid;
+    place-content: center;
+    max-width: 1000px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 4vw;
+    padding: 3px;
+    background: radial-gradient(circle, #5C8374, #93B1A6, #93B1A6, #183D3D);
+}
+header {
+   text-align: center;
+}
+form {
+    background: linear-gradient(to right, #93B1A6, #183D3D);
+    display: grid;
+    place-content: center;
+    padding: 15px;
+    border: 2px solid black;
+    background-color: #f0f0f0;
+}
+
+input[type=number] {
+    width: 100%;
+    padding: 11px;
+    border-radius:  1px solid #ccc;
+    box-sizing: border-box;
+ }
+ input:focus {
+   outline: red;
+ }
+
+ label {
+    padding: 12px 12px 12px 0;
+    font-size: 5vw;
+    font-weight: bold;
+ }
+ button {
+    background: linear-gradient(to right, grey, #333333, black);
+    color: white;
+    padding: 12px 10px;
+    cursor: pointer;
+    float: right;
+    margin-top: 5px;
+    font-size: 16px;
+ }
+
+ button:hover {
+    background: linear-gradient(to right, whitesmoke, snow, white);
+    color: black;
+ }
+#displayLabel {
+   text-align: center;
+   display: block;
+   background: grey;
+   color: white;
+   font-weight: bold;
+   padding: 18px 10px;
+}
+
+.para {
+   display: block;
+   padding: 10px 0;
+   text-align: center;
+   font-size: 5vw;
+   color: #333;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.para:hover {
+   color: black;
+}
+ .leftCol, 
+ .rightCol {
+    float: left;
+ }
+
+    .leftCol, .rightCol, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+
+ .row::after {
+    content: "";
+    display: table;
+    clear: both;
+ }
+
+ @media (min-width:600px) and (max-width:1024px) {
+
+    body {    font-size: 2vw;
+    }
+
+    .leftCol {
+         width:42%;
+      }
+    
+     .rightCol {
+         width: 58%;}
+ }
+ @media screen and (min-width:1025px){
+ body {    font-size: 1.5vw;
+    width: 100%;
+    
+}
+    .cleftCol {
+        width:46%;
+     }
+   
+    .rightCol {
+        width: 53%;}
+ }
