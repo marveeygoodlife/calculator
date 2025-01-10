@@ -9,22 +9,15 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    /* display:  flex;
-    flex-direction: column;
-     grid-template-areas: "header"
-    "main"
-    "footer";
-    grid-template-columns: 1fr;
-    grid-template-rows: 70px auto 100px; */
+    line-height: 1.6;
+    overflow-x: hidden;
      font-family: 'Roboto', sans-serif;
     font-size: 4vw;
     background-repeat: none;
     background-size: cover;
      background: radial-gradient(circle, black, #5C8374, #93B1A6, #93B1A6, #183D3D);
 }
-header { grid-area: header;
-   grid-column: 1 / 2;
-   grid-row: 1 / 2;
+header { 
    text-align: center;
    top: 0;
     width: 100%;
@@ -111,16 +104,11 @@ input[type=number] {
     clear: both;
  }
 main {
-   grid-area: main;
-   grid-column: auto;
-   grid-row: 2 / 3;
    padding:  .9em;
    margin: 0 auto;
    max-width:800px;
 }
  footer { grid-area: footer;
-   grid-column:auto;
-   grid-row: 3/4;
    height: auto;
    width: 100vw;
    text-align: center;
