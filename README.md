@@ -5,7 +5,7 @@
 - [Introduction](#introduction)
 - [Specifications](#specifications)
 - [Design](#design)
-- [Problems](#problem_it_solves)
+- [Problem_and_solution](#problem_and_solution)
 - [Result](#result)
 - [Conclusion](#conclusion)
 - [License](#license)
@@ -28,7 +28,7 @@ User Input:
 
 3 Calculation:
 
-*The function computes the total hours and total fee based on user inputs.
+* The function computes the total hours and total fee based on user inputs.
 
 4 Display:
 
@@ -45,7 +45,7 @@ User Input:
 * Smooth user interface, this pages uses both  radial and linear gradient to give it a smooth look.
 * The contrast is okay and the color is good too.
 
-## PROBLEMS IT SOLVES
+## PROBLEMS AND SOLUTION
 
 ###### Manual Fee Calculation
 
