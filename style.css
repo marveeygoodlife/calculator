@@ -8,7 +8,7 @@
 html {
     scroll-behavior: smooth;
 }
-body {
+body {padding : 10px;
     line-height: 1.6;
     overflow-x: hidden;
      font-family: 'Roboto', sans-serif;
